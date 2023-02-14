@@ -1,0 +1,14 @@
+{% extends 'webpapp/base.html' %}
+
+{% block content %}
+
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <h5>Select a webp file:</h5><br/>
+
+    <input type="file" name="myfile"><br/><br/>
+    <button type="submit" class="btn btn-primary">Convert</button>
+</form><br/>   
+
+
+{% endblock %}
